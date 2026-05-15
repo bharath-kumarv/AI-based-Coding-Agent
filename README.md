@@ -1,35 +1,22 @@
-🤖 Adaptive AI Coding Agent (Rule-Based Intelligent Tutor)
-📌 Project Overview
+Adaptive AI Coding Agent (Rule-Based Intelligent Tutor)
+Project Overview
 
-The Adaptive AI Coding Agent is a rule-based intelligent coding tutor built using Streamlit.
-It dynamically generates programming problems and adapts difficulty levels based on user performance.
+The Adaptive AI Coding Agent is a rule-based intelligent coding tutor developed using Python and Streamlit. The system dynamically generates programming challenges and adapts difficulty levels according to user performance.
 
-Unlike API-dependent AI systems, this tutor is fully self-contained and operates using a custom-designed adaptive algorithm without external AI services.
+Unlike API-dependent AI systems, this project is fully self-contained and operates using a custom-designed adaptive algorithm without relying on external AI services.
 
-The system tracks user skill progression, analyzes performance patterns, and adjusts problem complexity accordingly.
+The platform continuously tracks user progress, analyzes performance patterns, and adjusts problem complexity to create a personalized learning experience.
 
-🎯 Key Features
-
-🔄 Adaptive difficulty adjustment (Easy → Medium → Hard)
-
-📊 Skill tracking across topics (loops, conditionals, functions, lists)
-
-🧠 Rule-based decision engine
-
-📝 Automatic evaluation logic
-
-💡 Context-aware hint generation
-
-💾 Persistent user memory using JSON storage
-
-🔐 Basic authentication system
-
-🌐 Interactive web interface using Streamlit
-
-🏗 System Architecture
-
-The system follows a modular agent-based structure:
-
+Key Features
+Adaptive difficulty adjustment (Easy → Medium → Hard)
+Skill tracking across programming topics
+Rule-based decision engine
+Automatic answer evaluation
+Context-aware hint generation
+Persistent user memory using JSON storage
+Basic authentication system
+Interactive web interface using Streamlit
+System Architecture
 adaptive-ai-coding-agent/
 │
 ├── app.py                  # Main Streamlit application
@@ -51,92 +38,60 @@ adaptive-ai-coding-agent/
 │
 ├── requirements.txt
 └── README.md
+Working Principle
 
-🧠 How It Works
+The system evaluates user performance using multiple metrics, including:
 
-The system analyzes user performance metrics:
-
-Consecutive correct answers
-
-Consecutive errors
-
+Consecutive correct submissions
+Consecutive incorrect attempts
 Topic-wise skill scores
+Overall success rate
 
-Success rate
+Based on these metrics:
 
-It identifies weak skill areas.
+Consistent success increases difficulty
+Repeated mistakes reduce difficulty
+Balanced performance maintains moderate complexity
 
-Difficulty is adjusted dynamically:
+The tutor also prioritizes weaker skill areas and generates varied programming problems dynamically.
 
-Consistent success → Increased difficulty
-
-Repeated errors → Reduced difficulty
-
-Balanced performance → Moderate difficulty
-
-New problems are generated with dynamic parameters for variation.
-
-🛠 Technologies Used
-
+Technologies Used
 Python
-
 Streamlit
-
-JSON (for memory persistence)
-
+JSON Storage
 Object-Oriented Programming
+Rule-Based Adaptive Logic
 
-Rule-based decision logic
+No external AI APIs or machine learning services are used.
 
-No external AI APIs are used.
-
-⚙️ Installation
-1️⃣ Clone the Repository
+Installation
+1. Clone the Repository
 git clone https://github.com/your-username/adaptive-ai-coding-agent.git
 cd adaptive-ai-coding-agent
-
-2️⃣ Create Virtual Environment
+2. Create Virtual Environment
 python -m venv venv
 venv\Scripts\activate
-
-3️⃣ Install Dependencies
+3. Install Dependencies
 pip install -r requirements.txt
-
-▶️ Run the Application
+Run the Application
 streamlit run app.py
+Adaptive Learning Logic
 
-📊 Learning Adaptation Logic
+The adaptive engine updates user skill levels using:
 
-The adaptive engine adjusts user skill scores using:
-
-Incremental reward on correct answers
-
-Slight penalty on incorrect attempts
-
-Weakest-skill prioritization
-
+Reward-based score increments for correct answers
+Minor penalties for incorrect attempts
+Weak-topic prioritization
 Difficulty progression thresholds
 
-This enables a personalized coding practice experience.
+This creates a personalized and progressive coding practice environment.
 
-🔮 Future Enhancements
-
-Code execution sandboxing
-
+Future Enhancements
+Secure code execution sandbox
 Database-based user management
+Advanced learner analytics
+AI-assisted code feedback
+Cloud deployment support
+Project Status
 
-Advanced skill modeling
-
-AI-based code feedback integration
-
-Deployment on cloud platform
-
-👩‍💻 Author
-
-Subhasri N M
-Engineering Student
-AI & Machine Learning Enthusiast
-
-⭐ Project Status
-
-Functional prototype demonstrating adaptive educational agent architecture.
+Functional prototype demonstrating an adaptive educational coding tutor using rule-based intelligent agent architecture.
